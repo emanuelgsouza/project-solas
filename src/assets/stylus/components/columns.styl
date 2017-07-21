@@ -1,0 +1,40 @@
+.columns {
+  display flex
+  margin-top $space
+
+  @media (max-width $tablet) {
+    flex-direction column
+  }
+
+  .column__left,
+  .column__right {
+
+    @media (min-width $tablet + 1px) {
+      padding $space
+    }
+
+    @media (max-width $tablet) {
+      width 100%
+      padding $space 0
+    }
+  }
+
+  .column__left {
+    text-align center
+
+    @media (min-width $tablet + 1px) {
+      width 30%
+    }
+  }
+
+  .column__right {
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+
+    @media (min-width $tablet + 1px) {
+      width 70%
+    }
+  }
+}
