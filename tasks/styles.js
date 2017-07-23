@@ -12,6 +12,9 @@ module.exports = function (args, reload) {
       .pipe(gulpif(args.production, minifyCss()))
       .pipe(gulpif(args.production, rename('app.min.css')))
       .pipe(gulp.dest('./dist/css/'))
+
+    gulp.src('./src/assets/stylus/vendor/*.css')
+      .pipe(gulp.dest('./dist/css/'))
     if (!args.production) reload()
   })
 }

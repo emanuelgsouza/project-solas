@@ -4,7 +4,21 @@
   display flex
   align-items center
   justify-content center
+  flex-direction column
   font-family 'Arimo', sans-serif
+
+  hr {
+    background-color #332211
+  }
+
+  iframe {
+    width 100%
+    height 400px
+
+    @media (min-width $tablet + 1px) {
+      pointer-events none
+    }
+  }
 
   p {
     font-size 1.2rem

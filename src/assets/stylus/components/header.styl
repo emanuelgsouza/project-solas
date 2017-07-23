@@ -1,18 +1,21 @@
 .container_images {
-  max-width 600px
-  display flex
-  margin-top $space
 
-  @media (min-width: 600px) {
+  @media (min-width $tablet + 1px) {
+    display none
+  }
+
+  @media (max-width: $tablet) {
     position absolute
     left 0
     bottom 0
+    display block
+    display flex
+    margin-top $space
   }
 }
 
 .church,
 .solas {
-  max-width 300px
   flex-grow 1
 }
 
@@ -29,9 +32,15 @@
     text-align right
     margin-right $space
 
-    @media (min-width: 600px) {
+    @media (min-width $tablet + 1px) {
+      display none
+    }
+
+    @media (max-width: $tablet) {
       position absolute
-      right $space-sm
+      right 0
+      top 0
+      display block
     }
   }
 

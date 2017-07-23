@@ -1,14 +1,19 @@
 .header {
   width 100%
   min-height 100vh
-  background url('../img/fundo_header.jpg') no-repeat
-  background-size cover
   position relative
+
+  @media (min-width: $tablet + 1px) {
+    background url('../img/header.png') no-repeat
+    background-size cover
+  }
 
   @media (max-width: $tablet) {
     display flex
     flex-direction column
     justify-content center
+    background url('../img/fundo_header.jpg') no-repeat
+    background-size cover
   }
 
   @media (min-width: $tablet + 1px) {
