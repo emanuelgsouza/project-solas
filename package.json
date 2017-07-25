@@ -11,6 +11,7 @@
   "author": "EmanuelG",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.5",
     "eslint": "^3.12.2",
     "eslint-config-standard": "^7.0.0",
@@ -22,6 +23,7 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.6.0",
     "stylus": "^0.54.5",
